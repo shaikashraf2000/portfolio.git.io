@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="Myportfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+</head>
+<body>
+    <!-- Scroll Up Button -->
+<div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+</div>
+
+<!-- Logo/Icon Section -->
+<div class="icon">
+    <h2 class="logo"></h2>
+</div>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="max-width">
+        <!-- Logo (if needed) -->
+        <!-- <div class="logo"><a href="#"><span>Sai</span></a></div> -->
+        
+        <!-- Navigation Menu -->
+        <ul class="menu">
+            <li><a href="#home" class="menu-btn">Home</a></li>
+            <li><a href="#about" class="menu-btn">About</a></li>
+            <li><a href="#education" class="menu-btn">Education</a></li>
+            <li><a href="#skills" class="menu-btn">Skills</a></li>
+            <li><a href="#certifications" class="menu-btn">Certifications</a></li>
+            <li><a href="#publications" class="menu-btn">Publications</a></li>
+            <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <!-- Mobile Menu Button -->
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-1">Hello, I am</div>
+            <div class="text-2">Ashraf Shaik</div>
+            <div class="text-3">And I'm a <span class="typing"></span></div>
+            <!-- Removed commented-out link for cleaner code -->
+        </div>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="https://drive.google.com/file/d/18BSekW7WLR1AGwU50bOTV-BGMpDYz2Bh/view?usp=sharing" alt="profile-image" class="img-size">
+            </div> 
+            <div class="column right">
+                <div class="text">Ashraf Shaik</div>
+                <p>I am currently pursuing a Master's degree in Computer Applications at KBN College (Autonomous), with a strong focus on data analytics. To gain hands-on experience in the field, I am interning at Indian Servers, where I am working on Deep Learning projects. This internship is helping me apply the theoretical knowledge I've gained in a practical setting, allowing me to develop real-world solutions.</p><br>
+
+                <p>Additionally, I am enhancing my skills in data analysis through coursework at Fixity EDX. This has given me a solid understanding of various analytical techniques, which I can apply to solve complex problems.</p><br>
+                    
+                <p>I am proficient in Python (with a proficiency level of 75%), SQL (70%), Power BI (80%), and Excel (75%). I am excited to leverage these skills to innovate and create impactful solutions in the field of data analytics. My goal is to contribute meaningfully to projects by using data-driven insights to drive success.</p><br>
+                
+                <a href="https://drive.google.com/file/d/1n7qxIR4IyH4N104RmuTej6_Nhbllm34i/view?usp=drive_link" target="_blank" rel="noopener noreferrer">My Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- education -->
+<section class="education" id="education">
+    <div class="max-width">
+        <h2 class="title">Education</h2>
+        <div class="timeline">
+            <!-- Post Graduation -->
+<div class="timeline-item">
+    <div class="timeline-icon">
+        <i class="fas fa-user-graduate"></i>
+    </div>
+    <div class="timeline-content">
+        <h3 class="timeline-title"><strong>Post Graduation</strong></h3>
+        <p><strong>Course:</strong> MCA</p> 
+        <p class="timeline-institution"><strong>College:</strong> Kakaraparti Bhavanarayana College (Autonomous), VIJAYAWADA</p>
+        <span class="timeline-year"><strong>Passing Year:</strong> 2022-2024</span>
+        <p class="timeline-cgpa"><strong>CGPA: </strong>8.5</p>
+        <div class="project-details">
+            <p class="timeline-project"><strong>Project:</strong>Pediatric Pneumonia Recognition in Chest X-rays Using Deep Learning Techniques.</p>
+            <a class="toggle-details" onclick="toggleDetails(this)">View More</a>
+            <div class="details" style="display: none;">
+                <p><strong>1. </strong>Created a pneumonia detection system using DenseNet-161 on a Windows 8/10 PC with GPU acceleration and Python (Python IDLE 11). Used Google Colab for collaborative development. </p><br>
+                <p> <strong>2. </strong>Used a dataset of more than 5,000 medical pictures. In this 1,349 normal images and 3,883 pneumonia images. </p><br>
+                <p> <strong>3. </strong>Split dataset into 3,662 training images and 1,570 validation images. </p><br>
+                <p> <strong>4. </strong>Model architecture included DenseNet-161 with 3 transactions, each with 24 dense layers.</p><br> 
+                <p> <strong>5. </strong>Achieved training results after 15 epochs: train_loss 0.1202, train_accuracy 0.9579, val_loss 0.1432, val_accuracy 0.9535. </p><br>
+                <p> <strong>6. </strong>Tested initial accuracy of 0.8862, improved to 0.95; employed visualization for loss and accuracy metrics, showcasing practical clinical applications in medical image analysis. </p><br>                           
+                <div class="cert-card">
+                <p>This is my marks list.</p>
+                <p><a href="https://drive.google.com/file/d/1QZXEU9nwcPgGe4pCD-JYc4HHPGdCP084/view?usp=sharing" target="_blank">View Certificate</a></p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Graduation -->
+<div class="timeline-item">
+    <div class="timeline-icon">
+        <i class="fas fa-graduation-cap"></i>
+    </div>
+    <div class="timeline-content">
+        <h3 class="timeline-title"><strong>Graduation</strong></h3>
+        <p><strong>Course:</strong> BSc (MEC's)</p>
+        <p class="timeline-institution"><strong>College: </strong>PB Siddhartha Degree College of Arts & Science (Autonomous), VIJAYAWADA</p>
+        <span class="timeline-year"><strong>Passing Year:</strong> 2019-2022</span>
+        <p class="timeline-cgpa"><strong>CGPA:</strong> 7.55</p>
+        <div class="project-details">
+            
+            <a class="toggle-details" onclick="toggleDetails(this)">View More</a>
+            <div class="details" style="display: none;">
+                <div class="cert-card">
+                <p>This is my marks list.</p>
+                <p><a href="https://drive.google.com/file/d/1MXjNG_A3kvcDIqTnYsIENPs1mscyQxVQ/view?usp=sharing" target="_blank">View Certificate</a></p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Intermediate -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title"><strong>Intermediate</strong></h3>
+                    <p><strong>Course:</strong> MPC</p>
+                    <p class="timeline-institution"><strong>College:</strong> NRI Junior College</p>
+                    <span class="timeline-year"><strong>Passing Year:</strong> 2017-2019</span>
+                    <p class="timeline-cgpa"><strong>CGPA:</strong> 8.79</p>
+                    <div class="project-details">
+            
+                        <a class="toggle-details" onclick="toggleDetails(this)">View More</a>
+                        <div class="details" style="display: none;">
+                            <div class="cert-card">
+                            <p>This is my marks list.</p>
+                            <p><a href="https://drive.google.com/file/d/1sOpfTbvow8n9jT76AmWlifooIe3Yt23Y/view?usp=sharing" target="_blank">View Certificate</a></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SSC -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title"><strong>SSC</strong></h3>
+                    <p class="timeline-institution"><strong>School:</strong> Ravindra Bharathi High School</p>
+                    <span class="timeline-year"><strong>Passing Year:</strong> 2016-2017</span>
+                    <p class="timeline-cgpa"><strong>CGPA:</strong> 8.2</p>
+                    <div class="project-details">
+            
+                        <a class="toggle-details" onclick="toggleDetails(this)">View More</a>
+                        <div class="details" style="display: none;">
+                            <div class="cert-card">
+                            <p>This is my marks list.</p>
+                            <p><a href="https://drive.google.com/file/d/1ilFnojaT6Wov3m93e8P4v1UsxFrHzyO0/view?usp=sharing" target="_blank">View Certificate</a></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="skills" id="skills">
+    <div class="max-width">
+        <h2 class="title">Skills</h2>
+        <div class="cards">
+            <div class="card-container">
+                <h3 class="card-title">Technical Skills</h3>
+                <div class="card">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Databases</h4>
+                    <ul>
+                        <li>SQL</li>
+                        <li>Mongo DB</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Data Visualization</h4>
+                    <ul>
+                        <li>PowerBI</li>
+                        <li>Tableau</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Office Tools</h4>
+                    <ul>
+                        <li>MS Word</li>
+                        <li>Excel (Advanced)</li>
+                        <li>PowerPoint</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-container">
+                <h3 class="card-title">Soft Skills</h3>
+                <div class="card">
+                    <h4>Communication Skills</h4>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Team Work</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Management Skills</h4>
+                    <ul>
+                        <li>Time Management</li>
+                        <li>Multi Tasking</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Leadership and Personal Traits</h4>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Leadership</li>
+                        <li>Hardworking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- certifications -->
+    <section class="certifications" id="certifications">
+        <div class="max-width">
+            <h2 class="title">Certifications</h2>
+            <div class="cert-content">
+                <!-- NPTEL Section -->
+                <div class="cert-card" onclick="toggleCertDetails('cert1')">
+                    <div class="cert-box">
+                        <div class="cert-text">NPTEL</div>
+                    </div>
+                    <div id="cert1" class="cert-details">
+                        <div class="cert-card">
+                            <p>Programming in Java</p>
+                            <a href="https://drive.google.com/file/d/1x5vyor8T1QEFkGX-mN8csQMRT7vcHIZ3/view?usp=drive_link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indian Servers Section -->
+                <div class="cert-card" onclick="toggleCertDetails('cert2')">
+                    <div class="cert-box">
+                        <div class="cert-text">Indian Servers</div>
+                    </div>
+                    <div id="cert2" class="cert-details">
+                        <div class="cert-card">
+                            <p>Deep Learning</p>
+                            <a href="https://drive.google.com/file/d/1zEA_SCLLpymtsbyDjDqR0Qj82P4XSul6/view?usp=drive_link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PWC Certificate -->
+                <div class="cert-card" onclick="toggleCertDetails('cert3')">
+                    <div class="cert-box">
+                        <div class="cert-text">PWC Certificate</div>
+                    </div>
+                    <div id="cert3" class="cert-details">
+                        <div class="cert-card">
+                            <p>Power BI Job Simulation</p>
+                            <a href="https://drive.google.com/file/d/1YbEB2Dxp0zPjMJ6mSdCDgZtdQfrtkKwp/view?usp=drive_link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cognitive Class Section -->
+                <div class="cert-card" onclick="toggleCertDetails('cert4')">
+                    <div class="cert-box">
+                        <div class="cert-text">Cognitive Class</div>
+                    </div>
+                    <div id="cert4" class="cert-details">
+                        <div class="cert-card">
+                            <p>Data Visualization with Python</p>
+                            <a href="https://drive.google.com/file/d/1PzjuaAK3Lg73iKIioRA5DePXAAVNcCj7/view?usp=drive_link" target="_blank">View Certificate</a>
+                        </div>
+                        <div class="cert-card">
+                            <p>Data Analysis with Python</p>
+                            <a href="https://drive.google.com/file/d/1RYceN4VV_l8rAETaz-IxUuqhjVL56nwx/view?usp=drive_link" target="_blank">View Certificate</a>
+                        </div>
+                        <div class="cert-card">
+                            <p>Spark Fundamentals I</p>
+                            <a href="https://drive.google.com/file/d/1-KgtSkWxqsaN7RF7qgjI0hkeScjHhYjM/view?usp=drive_link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Great Learning Section -->
+                <div class="cert-card" onclick="toggleCertDetails('cert5')">
+                    <div class="cert-box">
+                        <div class="cert-text">Great Learning</div>
+                    </div>
+                    <div id="cert5" class="cert-details">
+                        <div class="cert-card">
+                            <p>Python Programming in Hindi</p>
+                            <a href="https://drive.google.com/file/d/17GQeWGlsG_bu9GTEJKaxbNB7ckGDqfl3/view?usp=sharing" target="_blank">View Certificate</a>
+                        </div>
+                        <div class="cert-card">
+                            <p>Python Fundamentals for Beginners</p>
+                            <a href="https://drive.google.com/file/d/1Xf6DeAifIfBzcOwhBH8x5IMj__oRJq-Z/view?usp=sharing" target="_blank">View Certificate</a>
+                        </div>
+                        <div class="cert-card">
+                            <p>Introduction to R</p>
+                            <a href="https://drive.google.com/file/d/1KOO66KrlsS6OrfXPPeIv9L44BSM7ginl/view?usp=sharing" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- publications -->
+<section class="publications-container" id="publications">
+    <div class="max-width">
+        <h2 class="title">Publications</h2>
+        <div class="pub-content">
+            <div class="pub-card">
+                <div class="pub-details">
+                    <div class="pub-title"><strong>Title of Publication:</strong> Analysis Of Methods And Application In Machine Learning</div>
+                    <div class="pub-authors"><strong>Authors:</strong> Shaik.Ashraf, Siva Prasad Gutakala</div>
+                    <div class="pub-journal"><strong>Journal/Conference:</strong> National Conference on Emerging Trends in Computational Science & Technology-2023</div>
+                    <div class="pub-date"><strong>Date:</strong> 29th & 30th September 2023</div>
+                    <div class="pub-description"><strong> ISBN:</strong>
+                        978-81-958673-8-7
+                    </div>
+                    <div class="project-details">
+                        <a class="toggle-details" style="background-color: transparent; border: none; color: blue;" onclick="toggleDetails(this)">View More</a>
+                        <div class="details">
+                            <div class="cert-card">
+                            <div class="pub-actions">
+                                <p>Click here to see my complete publication</p>
+                                <p><a href="https://drive.google.com/file/d/1w03SaWDYMeFunTINvcLeAEmk2KlimgJ2/view?usp=drive_link" target="_blank">View Publication</a></p></div>
+                                <div class="cert-card">
+                                <p>Click here to see my certificate</p>
+                                <p><a href="https://drive.google.com/file/d/1w0EoejO47Go1yuJQpMNtbEpPjTtNE2xe/view?usp=sharing" target="_blank">View Certificate</a></p></div>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+            <!-- Add more pub-card elements for each publication -->
+            <div class="pub-card">
+                <div class="pub-details">
+                    <div class="pub-title"><strong>Title of Publication:</strong> Machine Learning Approach in Drug Discovery:Modern Advancement and Future Perspective</div>
+                    <div class="pub-authors"><strong>Authors:</strong> P.L.Ramesh, Shaik.Ashraf, O.Sai Chand</div>
+                    <div class="pub-journal"><strong>Journal/Conference:</strong> NATIONAL SEMINAR ON ARTIFICIAL INTELLIGENCE IN CHEMISTRY: CURRENT TRENDS & FUTURE DIRECTIONS(NSAIC - 2023)</div>
+                    <div class="pub-date"><strong>Date:</strong> 22th & 23th November 2023</div>
+                    <div class="pub-description"><strong>ISBN:</strong>
+                         978-81-958704-5-5
+                    </div>
+                    <div class="project-details">
+                        <a class="toggle-details" style="background-color: transparent; border: none; color: blue;" onclick="toggleDetails(this)">View More</a>
+                        <div class="details">
+                            <div class="cert-card">
+                            <div class="pub-actions">
+                                <p>Click here to see my complete publication</p>
+                                <p><a href="https://drive.google.com/file/d/12dVOJ6cZAOSAyGicsmHfyNM25r4NEmFA/view?usp=drive_link" target="_blank">View Publication</a></p></div>
+                                <div class="cert-card">
+                                <!--<p>Click here to see my certificate</p>
+                                <p><a href="https://drive.google.com/file/d/1j04uUp-Hk4Gu440oh3_2ybB7soMQsHqx/view?usp=sharing" target="_blank">View Certificate</a></p>--></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-card">
+                <div class="pub-details">
+                    <div class="pub-title"><strong>Title of Publication: </strong> Emperical Study on Machine Learning Model</div>
+                    <div class="pub-authors"><strong>Authors:</strong> Vasavi Vankayala, Neeelima Muthiki, Shaik Ashraf, V.T.Ram Pavan Kumar</div>
+                    <div class="pub-journal"><strong>Journal/Conference:</strong> NATIONAL SEMINAR ON ARTIFICIAL INTELLIGENCE IN CHEMISTRY: CURRENT TRENDS & FUTURE DIRECTIONS(NSAIC - 2023)</div>
+                    <div class="pub-date"><strong>Date:</strong> 22th & 23th November 2023</div>
+                    <div class="pub-description"><strong>ISBN:</strong>
+                        978-81-958704-5-5
+                    </div>
+                    <div class="project-details">
+                        <a class="toggle-details" style="background-color: transparent; border: none; color: blue;" onclick="toggleDetails(this)">View More</a>
+                        <div class="details">
+                            <div class="cert-card">
+                            <div class="pub-actions">
+                                <p>Click here to see my complete publication</p>
+                                <p><a href="https://drive.google.com/file/d/1rYxkeEAS4ec9mJ3pt276l4uLwZYl30hv/view?usp=drive_link" target="_blank">View Publication</a></p></div>
+                                <div class="cert-card">
+                                <p>Click here to see my certificate</p>
+                                <p><a href="https://drive.google.com/file/d/16Ye76gjMn5lTl1t2hZjxHR6mUjc1082Y/view?usp=sharing" target="_blank">View Certificate</a></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <p>To get in touch with me: </p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Ashraf Shaik</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title"> D-46, Vombay Colony, A S Nagar, Vijayawada-520015, Andhra Pradesh, India.</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">mr.shaikashraf2000@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div class="info">
+                                <div class="head">Phone</div>
+                                <div class="sub-title">9912431167</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <p><b>Ashraf Shaik</b></p>
+        <div class="social">
+            
+            <a href="https://www.linkedin.com/in/ashraf-shaik-830156275/" target="_blank">
+                <i class="fa fa-linkedin-square">&emsp;</i>
+            </a>
+            <a href="https://github.com/shaikashraf2000" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+
+        </div>
+    </footer>
+
+
+    <script src="Myportfolio.js"></script>
+</body>
+</html>
